@@ -53,7 +53,7 @@
 -(void)OJLAnimationButtonDidStartAnimation:(OJLAnimationButton *)OJLAnimationButton{
     NSLog(@"start");
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [OJLAnimationButton stopAnimationWithFinish:NO];
+        [OJLAnimationButton stopAnimation];
     });
 }
 

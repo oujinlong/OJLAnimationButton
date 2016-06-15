@@ -68,12 +68,10 @@ static NSTimeInterval endDuration = 0.5;
     }];
 }
 
--(void)stopAnimationWithFinish:(BOOL)finish{
+-(void)stopAnimation{
     self.userInteractionEnabled = YES;
     
-    if (finish) {
-        
-    }else{
+    
         if ([self.delegate respondsToSelector:@selector(OJLAnimationButtonWillFinishAnimation:)]) {
             [self.delegate OJLAnimationButtonWillFinishAnimation:self];
         }
@@ -88,6 +86,6 @@ static NSTimeInterval endDuration = 0.5;
                 [self.delegate OJLAnimationButtonDidFinishAnimation:self];
             }
         }];
-    }
+    
 }
 @end

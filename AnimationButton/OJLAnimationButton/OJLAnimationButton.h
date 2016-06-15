@@ -27,6 +27,6 @@
 
 -(void)startAnimation;
 
--(void)stopAnimationWithFinish:(BOOL)finish;
+-(void)stopAnimation;
 @property (nonatomic, weak) id <OJLAnimationButtonDelegate> delegate;
 @end
